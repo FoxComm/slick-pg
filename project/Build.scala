@@ -67,7 +67,7 @@ object SlickPgBuild extends Build {
     }
     Seq (
       "org.scala-lang" % "scala-reflect" % scalaVersion,
-      "com.typesafe.slick" %% "slick" % "3.0.1",
+      "com.typesafe.slick" %% "slick" % "3.1.0",
       "org.postgresql" % "postgresql" % "9.4-1201-jdbc41",
       "org.scalatest" %% "scalatest" % "2.2.4" % "test"
     ) ++ extractedLibs
@@ -81,7 +81,7 @@ object SlickPgBuild extends Build {
     )
   )
 
-  val json4sVersion = "3.2.10"
+  val json4sVersion = "3.3.0.RC3"
   lazy val slickPgProject = Project(id = "slick-pg", base = file("."),
     settings = Defaults.coreDefaultSettings ++ commonSettings ++ Seq(
       name := "slick-pg",
